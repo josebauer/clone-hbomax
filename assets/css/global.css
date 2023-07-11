@@ -87,6 +87,30 @@ p {
   background: var(--btn-link-bg-color);
 }
 
+.button {
+  padding: 16px 40px;
+  border-radius: 500px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-gradient {
+  background: var(--btn-bg-color-gradient);
+  outline: 3px solid transparent;
+  background-size: 250%;
+  transition: background 1s, outline 1s, transform 1s;
+}
+
+.button-gradient:hover {
+  background-color: transparent;
+  background-position: 100%;
+  outline: 2px solid var(--secondary-color);
+  transform: scale(1.05);
+}
 
 .container {
   max-width: 1200px;

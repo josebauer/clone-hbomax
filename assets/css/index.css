@@ -73,33 +73,8 @@ header::after {
   font-weight: 300;
 }
 
-.button-gradient {
-  background: var(--btn-bg-color-gradient);
-  outline: 3px solid transparent;
-  background-size: 250%;
-  transition: background 1s, outline 1s, transform 1s;
-}
-
 .header-button {
   animation: wiggle 2.2s linear infinite;
-}
-
-.button {
-  padding: 16px 40px;
-  border-radius: 500px;
-  font-weight: 700;
-  color: var(--text-color);
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  border: none;
-  cursor: pointer;
-}
-
-.button-gradient:hover {
-  background-color: transparent;
-  background-position: 100%;
-  outline: 2px solid var(--secondary-color);
-  transform: scale(1.05);
 }
 
 .small-text {
