@@ -152,3 +152,53 @@ p {
   gap: 40px;
   margin-top: 80px;
 }
+
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+  section {
+    scroll-margin-top: 120px;
+  }
+
+  .navbar {
+    padding: 32px 24px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .logo-menu {
+    max-width: 100px;
+  }
+
+  .button-nav {
+    margin: 0;
+  }
+
+  header {
+    margin-top: 128px !important;
+  }
+
+  .link-footer {
+    display: block;
+    margin-bottom: 16px;
+  }
+}
+
+
+/* Scroll */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tertiary-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+/* Media Queries */

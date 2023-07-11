@@ -238,6 +238,73 @@ section {
   background-image: url("../images/UCL-Hover.webp");
 }
 
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  .plans {
+    gap: 40px;
+  }
+
+  .banners-container {
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .banners-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .price-sub {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .plan {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card {
+    padding: 40px;
+  }
+
+  .banners-container {
+    grid-template-columns: repeat(6, 100%);
+    grid-auto-flow: column;
+    overflow: auto hidden;
+  }
+}
+
+@media (pointer: coarse) {
+  .card:hover {
+    transform: none;
+  }
+
+  .plans:has(.card:nth-child(1):hover)
+    .card:nth-child(2),
+  .plans:has(.card:nth-child(2):hover)
+    .card:nth-child(1) {
+    transform: none;
+  }
+}
+
 
 /* Animations */
 
@@ -284,19 +351,4 @@ section {
   100% {
     transform: rotate(0);
   }
-}
-
-/* Custom Scroll */
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--tertiary-color);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary-color);
 }
