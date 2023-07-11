@@ -69,5 +69,10 @@ body {
   text-decoration: none;
   margin-left: 24px;
   font-weight: bold;
+  transition: color 0.5s;
+}
+
+.forgot-password:hover {
+  color: var(--text-color);
 }
 
