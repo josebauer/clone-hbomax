@@ -33,6 +33,7 @@
   margin: 0;
   vertical-align: baseline;
   list-style: none;
+  text-decoration: none;
   border: 0;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -46,4 +47,45 @@ body {
 
 p {
   font-family: "Quicksand", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 24px;
+  text-align: center;
+}
+
+/* Footer */
+
+.footer p {
+  font-weight: 300;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  margin: 16px 0;
+  color: var(--link-color);
+}
+
+.link-footer {
+  font-weight: bold;
+  color: var(--link-color);
+  text-transform: uppercase;
+  margin: 0 14px;
+  letter-spacing: 2px;
+  transition: color 0.5s;
+  font-size: 0.875rem;
+}
+
+.link-footer:hover {
+  color: var(--text-color);
+}
+
+.social-medias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 80px;
 }

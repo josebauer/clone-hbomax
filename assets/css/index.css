@@ -129,7 +129,6 @@ header::after {
   font-weight: 700;
   color: var(--text-color);
   text-transform: uppercase;
-  text-decoration: none;
   letter-spacing: 4px;
   border: none;
   cursor: pointer;
@@ -149,6 +148,7 @@ header::after {
   font-weight: 300;
 }
 
+
 /* Cards Subscription */
 
 section {
@@ -159,13 +159,6 @@ section {
   background: url(../images/background-movies-series.png) no-repeat;
   background-size: cover;
   position: relative;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 24px;
-  text-align: center;
 }
 
 .title-section {
@@ -209,7 +202,6 @@ section {
 
 .description {
   text-align: left;
-  list-style: none;
   font-size: 1.25rem;
   margin-bottom: 14px;
   padding-left: 14px;
@@ -228,15 +220,6 @@ section {
 .plans:has(.card:nth-child(2):hover) .card:nth-child(1) {
   transform: rotateY(45deg);
 }
-
-/* .card:hover {
-  transform: scale(1.05);
-  border: 2px solid var(--tertiary-color);
-}
-
-.card:hover .contents__image {
-  opacity: 0;
-} */
 
 
 /* Banners */
